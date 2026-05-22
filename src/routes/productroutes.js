@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const ctrl = require('../controllers/productController');
-
+const ctrl = require('../controllers/productcontroller');
 router.get('/', ctrl.getAll);
 router.get('/:id', ctrl.getById);
 router.post('/', ctrl.create);
